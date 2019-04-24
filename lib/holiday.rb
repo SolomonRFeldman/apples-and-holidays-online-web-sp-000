@@ -82,6 +82,7 @@ def all_holidays_with_bbq(holiday_hash)
       end
     }
   }
+  bbq_holidays
 end
 e = "hello everybody"
 puts e.scan(/\w+/).collect{ |value|value.capitalize}.join(" ")
