@@ -77,6 +77,11 @@ def all_holidays_with_bbq(holiday_hash)
   bbq_holidays = []
   holiday_hash.each { |season, holiday|
     holiday.each { |holiday_key, supplies|
+      if supplies.any?( |supply| supply == "BBQ")
+        bbq_holidays << holiday_key
+      end
+    }
+  }
 end
 e = "hello everybody"
 puts e.scan(/\w+/).collect{ |value|value.capitalize}.join(" ")
